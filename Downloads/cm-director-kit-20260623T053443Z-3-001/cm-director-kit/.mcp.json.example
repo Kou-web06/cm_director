@@ -1,0 +1,13 @@
+{
+  "_comment": "Higgsfield MCP 設定の雛形。実値は各自の Higgsfield 発行情報に置き換えること。実トークンを含むファイルは共有/コミットしない。コピーして .mcp.json にリネームして使う。",
+  "mcpServers": {
+    "higgsfield": {
+      "_note": "Higgsfield はリモート(コネクタ)型のことが多い。下記は一例。実際の type/url/認証方式は Higgsfield の指示に従う。",
+      "type": "http",
+      "url": "https://<HIGGSFIELD_MCP_ENDPOINT>",
+      "headers": {
+        "Authorization": "Bearer <YOUR_HIGGSFIELD_TOKEN>"
+      }
+    }
+  }
+}
